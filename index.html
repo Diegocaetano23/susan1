@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Susan Elise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* cor rosa claro */
+      overflow-x: hidden; /* Impede a rolagem horizontal */
+
+    }
+
+
+    .informacoes {
+  margin-bottom: 0; /* Remover margem inferior */
+}
+
+
+    .logo-info1 {
+  max-width: 400px; /* Define a largura máxima */
+  width: 100%; /* Faça a imagem ocupar toda a largura disponível */
+  display: block; /* Altere o tipo de exibição para block para centralizar */
+  margin: 0 auto; /* Defina margens automáticas para centralizar horizontalmente */
+}
+
+.tel{
+  font-size: 20x;
+  font-weight: bold;
+  color: rgb(139, 111, 139);
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+    .topnav {
+      background-color: rgb(255, 255, 255); /* branco com 70% de opacidade */
+      text-align: left; /* alinhar o texto à esquerda */
+      width: 100%; /* ocupar toda a largura */
+      z-index: 999; /* garantir que fique acima de outros elementos */
+      top: 0; /* posicionar no topo */
+      display: flex; /* utilizar flexbox para alinhar itens */
+      justify-content: space-between; /* distribuir itens horizontalmente */
+      align-items: center; /* alinhar itens verticalmente */
+      padding: 10px;
+      box-sizing: border-box; /* incluir padding e bordas na largura total */
+    }
+
+    .titulo1 {
+      font-size: large;
+      color: black;
+      font-weight: bold;
+    }
+
+    .texto1{
+      text-align: justify;
+      margin: 12px;
+      font-weight: bolder;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo {
+  max-width: 100%; /* Define a largura máxima do logo */
+  height: auto; /* Mantém a proporção da altura */
+  margin-left: 20px; /* Ajusta a margem esquerda conforme necessário */
+}
+
+    .texto-capa{
+      font-size: 40px;
+
+    }
+
+    .nome-logo{
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    .topnav h3 {
+      margin: 0; /* remover margem padrão */
+      cursor: pointer; /* cursor de mão ao passar sobre */
+
+    }
+
+    .apresentacao {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      margin-bottom: 0; /* remover margem inferior */
+      background-color: rgb(230, 218, 241);
+      
+    }
+
+    .texto-apresentacao {
+      order: 1; /* definir a ordem para exibir o texto à esquerda */
+      text-align: center; /* centralizar o texto */
+      margin-bottom: 20px; /* espaçamento entre o texto e a imagem */
+      margin-top: 20px; /* espaço acima do texto */
+      max-width: 600px; /* largura máxima do texto */
+      margin-left: auto; /* alinhar à direita */
+      margin-right: auto; /* alinhar à esquerda */
+      color: #555454; /* cor do texto */
+    }
+
+    .foto-apresentacao {
+      text-align: center; /* centralizar a imagem */
+      width: 100%; /* garantir que a imagem ocupe toda a largura do contêiner pai */
+      height: 100%;
+    }
+
+    .foto-apresentacao img {
+      max-width: 100%; /* garantir que a imagem seja responsiva */
+      height: auto;
+      border-radius: 5px; /* bordas arredondadas */ 
+    }
+
+    .quem-sou-eu {
+      display: flex; /* utilizar flexbox para alinhar itens */
+      flex-direction: column; /* dispor os itens em coluna */
+      align-items: center; /* alinhar os itens ao centro */
+      padding: 20px;
+      text-align: justify;
+      margin-bottom: 0; /* Remover margem inferior */
+    }
+
+    .foto-quemsoueu {
+      width: 100%; /* ocupar toda a largura */
+      margin-bottom: 20px; /* espaçamento abaixo da foto */
+    }
+
+    .foto-quemsoueu img {
+      max-width: 100%; /* garantir que a imagem seja responsiva */
+      height: auto;
+      border-radius: 5px; /* bordas arredondadas */
+    }
+
+    .texto-quemsoueu {
+      max-width: 600px; /* largura máxima do texto */
+      margin-left: auto; /* alinhar à direita */
+      margin-right: auto; /* alinhar à esquerda */
+      color: #555454; /* cor do texto */
+      text-decoration-line: right;
+      margin-top: 40px;
+      
+    }
+    
+
+    @media screen and (min-width: 768px) {
+
+      .logo {
+    max-width: 320px; /* Ajusta a largura do logo para telas maiores */
+  }
+
+      .foto-apresentacao img.vertical {
+    display: none; /* Esconder imagens verticais em telas maiores */
+  }
+
+
+     .foto-quemsoueu img.vertical {
+    display: none; /* Esconder imagens verticais em telas maiores */
+  }
+  
+
+
+      .apresentacao {
+        flex-direction: row; /* alterar o layout para linha em dispositivos maiores */
+        justify-content: space-between; /* distribuir os itens horizontalmente */
+      }
+
+      .nome {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+      }
+
+
+      
+      .nome-info {
+        margin-top: 68px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+      }
+
+      .nome1-info{
+
+      font-size: 20px;
+      color:#D8C8AB;
+      text-align: center;
+      font-size: italic;
+      margin-top: -35px;
+      }
+      
+      
+      .nome1{
+
+        font-size: 20px;
+        color:#a59344;
+        text-align: center;
+        margin-top: -48px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+
+      .texto {
+        color:black; /* cor do texto */
+        margin-top: 52px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+      }
+
+      .texto-apresentacao {
+        order: 0; /* definir a ordem para exibir o texto à esquerda */
+        flex: 1; /* permitir que o texto ocupe o espaço disponível */
+        text-align: left; /* alinhar o texto à esquerda */
+        margin-bottom: 175px; /* remover o espaçamento inferior */
+   
+      }
+
+      .foto-apresentacao {
+        order: 1; /* definir a ordem para exibir a imagem à direita */
+        width: 45%; /* definir a largura da imagem */
+        margin-top: 0; /* remover o espaço acima da imagem */
+      }
+
+      .quadrados-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* espaçamento uniforme entre os quadrados */
+        padding: 0 20px; /* Adicionado padding nas laterais */
+        max-width: 110
+        0px; /* Limitar a largura para centralizar os quadrados */
+        margin: 20px auto; /* Centralizar os quadrados */
+        box-sizing: border-box; /* Incluir padding e bordas na largura total */
+      }
+
+   
+
+        .quadrado-servico {
+      width: calc(25% - 20px); /* Largura dos quadrados com margens */
+      height: 250px; /* Altura dos quadrados */
+      background-color: rgb(255, 255, 255); /* cor de fundo dos quadrados */
+      margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+      border-radius: 10px; /* Bordas arredondadas */
+      border: 2px solid #000000; /* Borda azul brilhante */
+
+    }
+
+      
+      .quem-sou-eu {
+        flex-direction: row; /* dispor os itens em linha */
+        align-items: flex-start; /* alinhar os itens ao início */
+        padding: 0; /* remover o padding */
+      }
+
+      .foto-quemsoueu {
+        width: 45%; /* largura da foto */
+        margin-bottom: 0; /* remover o espaçamento abaixo da foto */
+        margin-right: 20px; /* espaçamento à direita */
+      }
+
+      .texto-quemsoueu {
+        width: 50%; /* largura do texto */
+        margin-left: 0; /* remover a margem à esquerda */
+        margin-right: auto; /* alinhar à direita */
+      }
+
+
+      .lotus {
+
+        text-align: center;
+        margin-bottom: -95px;
+}
+
+.lotus-info {
+
+text-align: center;
+margin-bottom: -80px;
+}
+
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+      body {
+    overflow-x: hidden; /* Remover a barra de rolagem horizontal */
+  }
+
+
+  .topnav {
+    padding-right: 20px; /* Adicionar preenchimento à direita para compensar a margem */
+  }
+
+            
+
+      .titulo1 {
+      font-size: large;
+      color: black;
+      font-weight: bold;
+    }
+
+    .texto1{
+      text-align: justify;
+      margin: 12px;
+      font-weight: bolder;
+      color: rgb(0, 0, 0);
+    }
+
+
+
+      .nome-info {
+        margin-top: 80px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+      }
+
+      .nome1-info{
+
+      font-size: 20px;
+      color:#D8C8AB;
+      text-align: center;
+      font-size: italic;
+      margin-top: -35px;
+      }
+
+      .lotus-info {
+
+text-align: center;
+margin-bottom: -80px;
+}
+
+
+      .foto-apresentacao img:not(.vertical) {
+    display: none;
+  }
+  
+  .foto-quemsoueu img:not(.vertical) {
+    display: none;
+  }
+
+  .foto-apresentacao img.vertical {
+    display: block;
+  }
+  
+  .foto-quemsoueu img.vertical {
+    display: block;
+  }
+
+
+      .apresentacao {
+        margin-top: 0px; /* Aumentar a margem superior para centralizar na tela menor */
+        margin-bottom: 0; /* remover margem inferior */
+      }
+
+      .quadrados-servicos {
+        display: flex;
+        flex-direction: column; /* Dispor os quadrados em coluna */
+        align-items: center; /* Centralizar os quadrados */
+        margin-top: 20px;
+      }
+
+      .quadrado-servico {
+        width: 80%; /* Largura dos quadrados */
+        height: 200px; /* Altura dos quadrados */
+        background-color: #ffffff; /* cor de fundo dos quadrados */
+        margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+      }
+
+      .quem-sou-eu {
+        padding: 20px; /* Adicionar padding */
+      }
+
+      .foto-quemsoueu,
+      .texto-quemsoueu {
+        width: 100%; /* ocupar toda a largura */
+        margin-right: 0; /* remover margem à direita */
+        margin-bottom: 20px; /* espaçamento abaixo */
+        margin-top: -60px;
+      }
+
+      .nome {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+        margin-top: -15px;
+  }
+  
+  .nome1 {
+    font-size: 20px;
+        color: #D8C8AB;
+        text-align: center;
+        font-size: italic;
+        margin-top: -65px
+  }
+
+  .lotus {
+
+text-align: center;
+margin-bottom: -80px;
+}
+
+
+    }
+
+    /* Estilos para os textos no topnav */
+    .topnav-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav-text h3 {
+      margin: 0;
+      margin-left: 10px; /* reduzir a margem esquerda */
+      margin-right: 20px; /* aumentar a margem direita */
+      color: #000; /* cor do texto */
+    }
+
+    /* Estilos para o botão */
+    .btn {
+      background-color: #000000;
+      color: #ffffff  ; /* cor do texto branca */
+      border: 2px solid #000000; /* borda sólida */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 30px auto; /* centralizar e aumentar o espaçamento abaixo */
+      margin-top: 55px;
+    } 
+
+    .btn:hover {
+      background-color: #fff3e0;
+      color: #ffffff; /* alterar a cor do texto ao passar o mouse */
+    }
+
+    .servicos{
+      text-align: center;
+      background-color: #f1e5f3;
+      padding: 20px; /* Adicionado para espaçamento interno */
+      margin-top: -3px; /* Remover margem superior */
+      margin-bottom: 0; /* Remover margem inferior */
+    }
+
+    .titulo-servicos{
+      font-size: 30px;
+      color: rgb(99, 82, 102);
+      font-weight: bolder;
+    }
+
+    .titulo-servicos2{
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      margin-top: -30px;
+      font-weight: bolder;
+    }
+
+    .crp{
+      font-size: 17px;
+      color: black;
+      margin-top: -18px;
+  
+    }
+
+    .texto-servicos {
+      max-width: 600px; /* Largura máxima do texto */
+      margin: 0 auto; /* Centralizar o texto */
+      text-align: justify;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 19px;
+      font-weight: bolder;
+    }
+
+    .texto-sobremim{
+
+      font-weight: bolder;
+      font-size: 18px;
+    }
+
+    .agendar-consulta-btn {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .agendar-consulta-btn:hover {
+      background-color: #000000;
+    }
+
+    .fixed-image-link {
+      position: fixed; /* Fixar a posição */
+      bottom: 10px; /* Distância do fundo */
+      right: 10px; /* Distância da direita */
+      z-index: 9999; /* Garantir que esteja acima de outros elementos */
+      
+    }
+
+
+  </style>
+
+
+  
+
+</head>
+<body>
+  
+  <div class="topnav">
+<!--<p class="nome-logo"> Psicóloga Susan Elise</p>--> 
+<img class="logo" src="./src/css/img/logo.png" alt="">  
+<!--<a class="tel" href="https://wa.me/5512982560443" target="_blank">(12) 98256-0443</a>-->
+ 
+    </div>
+
+  <div class="apresentacao">
+    <div class="texto-apresentacao">
+     
+<p class="nome">Você pode ser Feliz!</p>
+<p class="nome1">Eu vou te ajudar nessa jornada!</p>      
+      <p class="texto">O consultório da Susan Elise Psicóloga Clínica foi especialmente pensado para oferecer um ambiente acolhedor e confortável, onde você poderá conversar com privacidade e tranquilidade. Estou aqui para ajudá-lo(a) a encontrar alívio em momentos de angústia, tristeza ou incertezas.</p>
+      <button class="btn" onclick="window.open('https://wa.me/5512982560443', '_blank')">Falar comigo</button>
+      
+    </div>
+
+    <div class="foto-apresentacao">
+      <img src="./src/css/img/formas/complete1.png" alt="" class="horizontal">
+      <img src="./src/css/img/backsite1vertical.png" alt="" class="vertical">
+    </div>
+    
+  </div>  
+ 
+
+
+
+  </div>
+
+  <div class="servicos">
+    <!-- Conteúdo dos serviços -->
+    <br><br>
+    
+    <p class="titulo-servicos">Você merece ser feliz!</p>
+
+    <p class="texto-servicos">Acredito que cada pessoa é única e, por isso, meus atendimentos são personalizados para atender às necessidades individuais de cada paciente. Considero que acolher o sentimento de alguém que confiou partilhar detalhes minuciosos de sua vida é algo de muita responsabilidade. Desta forma, como profissional, procuro estar em constante capacitação, mantendo-me sempre atualizada com as melhores práticas e técnicas terapêuticas. Agende uma consulta para saber mais.</p>
+    <br><br>
+    
+    <button class="agendar-consulta-btn" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar Consulta</button>
+    <br><br><br><br>
+
+
+    <p class="titulo-servicos">Como posso te ajudar?</p>
+
+    <div class="quadrados-servicos">
+      <div class="quadrado-servico"><p class="titulo1">Ansiedade</p> <p class="texto1">Uma resposta natural do corpo ao estresse ou perigo percebido, caracterizada por sentimentos de preocupação, nervosismo e inquietação. Em excesso, pode levar a sintomas físicos e emocionais intensos, afetando negativamente a qualidade de vida.</p></div>
+      <div class="quadrado-servico"><p class="titulo1">Depressão</p> <p class="texto1">Um distúrbio de saúde mental que causa sentimentos persistentes de tristeza, desesperança e falta de interesse em atividades cotidianas. Pode afetar o sono, o apetite e a energia, comprometendo significativamente o bem-estar emocional e o funcionamento diário.</p></div>
+      <div class="quadrado-servico"><p class="titulo1">TDAH <p class="texto1">Ou Transtorno do Déficit de Atenção e Hiperatividade, é uma condição neurobiológica caracterizada por dificuldades de concentração, hiperatividade e impulsividade. Afeta tanto crianças quanto adultos, interferindo na vida acadêmica, profissional e social.</p></div>
+      <div class="quadrado-servico"><p class="titulo1">Autoestima<p class="texto1">Na psicologia refere-se à avaliação subjetiva que uma pessoa faz de si mesma, influenciando a percepção de seu valor e competência. É essencial para o bem-estar emocional e o desenvolvimento saudável, impactando nas relações interpessoais e no enfrentamento de desafios.</p></div>
+      <div class="quadrado-servico"><p class="titulo1">Disturibios emocionais<p class="texto1">São condições psicológicas que afetam o equilíbrio emocional de uma pessoa, podendo incluir ansiedade, depressão, transtornos de humor e traumas psicológicos. Eles podem causar sintomas variados, como alterações de humor, dificuldades de relacionamento e comprometimento do funcionamento diário.</p></div>
+      <div class="quadrado-servico"><p class="titulo1">Compulsão alimentar<p class="texto1">Um distúrbio caracterizado por episódios recorrentes de ingestão excessiva de alimentos, muitas vezes acompanhados por uma sensação de perda de controle. Pode resultar em sentimentos de culpa, desconforto físico e ganho de peso significativo.</p></div>
+      <div class="quadrado-servico"><p class="titulo1"></p><p class="texto1"></p></div>
+      <div class="quadrado-servico"><p class="titulo1"></p><p class="texto1"></p></div>
+    </div>
+
+ <button class="agendar-consulta-btn" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar Consulta</button>
+
+  </div>
+
+
+  <div class="quem-sou-eu">
+    <div class="foto-quemsoueu">
+      <img src="./src/css/img/backsite2.png" alt="" class="horizontal">
+      <img src="./src/css/img/backsite2vertical.png" alt="" class="vertical">
+    </div>
+
+
+
+    <div class="texto-quemsoueu">
+      <p class="titulo-servicos">Sobre mim</p>
+      <p class="titulo-servicos2">Susan Elise</p>
+      <p class="crp">CRP 20/12613</p>
+        <p class="texto-sobremim">Olá! Sou Susan Elise, psicóloga com uma trajetória de duas décadas dedicadas ao cuidado emocional. Ao longo da minha carreira, especializei-me em áreas cruciais como depressão, ansiedade, relacionamentos e dependência tecnológica.  A terapia online que ofereço vai além das fronteiras geográficas, atendendo pacientes em todo o Brasil e brasileiros no exterior, incluindo terapia de casal.
+          
+          
+          Entendo que a busca por terapia muitas vezes surge diante de um sofrimento que nos paralisa, e minha abordagem é proporcionar um espaço ético, acolhedor e personalizado para compreensão e transformação.
+          
+          
+          Minha formação inclui graduação em Psicologia pela Universidade Metodista de Piracicaba, especialização em Terapia Positiva pela PUC-SP, mestrado em Educação pela UNISAL, Americana, e especialização em Criminal Profiling pelo Instituto Criminalístico de Portugal.
+          
+          
+          Estou comprometida em guiá-lo em sua jornada de autoconhecimento e transformação emocional.</p>
+    </div>
+
+  </div>
+
+  <div class="informacoes" style="background-color: #f1e5f3;margin-top: -4px;">
+    <br>
+    <div class="logo-info"></div>
+    <img class="logo-info1" src="./src/css/img/logo.png" alt="">
+    </div>
+  </div>
+  
+  <div class="whapp">
+  <a href="https://wa.me/5512982560443" target="_blank" class="fixed-image-link">
+    <img  src="./src/css/img/whapp.png" alt="Descrição da imagem" style="width: 80px; height: auto;">
+  </a>
+</div>
+</body>
+</html>
